@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "A Webpack Module Federation Case In React  ·",
   "main": "index.js",
-  "private": true,
-  "workspaces": {
-    "packages": ["lib-app", "component-app", "main-app"]
-  },
   "scripts": {
-    "start": "concurrently 'cd ./component-app && yarn start' 'cd ./lib-app && yarn start' 'cd ./main-app && yarn start'"
+    "start": "npx lerna run start --parallel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderlaw/react-webpack-MF.git"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/anderlaw/react-webpack-MF#readme",
   "devDependencies": {
-    "concurrently": "7.2.1"
+    "lerna": "4.0.0"
   }
 }
